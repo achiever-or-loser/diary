@@ -125,8 +125,19 @@ Filter分为Globle Filter和RouteFilter
 
 
 
-docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
 
-docker run -p 3306:3306 --name mysql -v /usr/local/docker/mysql/conf:/etc/mysql  -v /usr/local/docker/mysql/logs:/var/log/mysql  -v /usr/local/docker/mysql/data:/var/lib/mysql  -e MYSQL_ROOT_PASSWORD=root \ -d mysql:5.7
 
+pom 版本
+
+springboot版本与springcloud对应支持版本
+
+~~~
+<version>2.1.8.RELEASE</version>
+<spring-cloud.version>Greenwich.SR3</spring-cloud.version>
+~~~
+
+```
+<version>2.2.1.RELEASE</version>
+<spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
+```
 
