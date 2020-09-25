@@ -68,3 +68,16 @@ classpath:/
 也可以通过指定配置spring.config.location来改变默认配置，一般在项目已经打包后，我们可以通过指令 　　java -jar xxxx.jar --spring.config.location=D:/kawa/application.yml来加载外部的配置
 ```
 
+# 依赖问题
+
+查询spring-boot-starter-web-2.3.0.RELEASE.pom没有validation对应的包，所以要想使用校验功能要手动引入包：
+
+```xml
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```
+
+
+
