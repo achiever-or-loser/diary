@@ -25,7 +25,15 @@
 解决方案：
 
 1. 将后端cors跨域配置删除即可，只保留API gateway 项目的cors配置。
-2. 将gateway中的cors配置的路径改为`/*`即可
 
 https://segmentfault.com/a/1190000009220751
 
+
+
+版本问题：
+
+注意cloud与boot的版本，同时有些版本
+
+在spring cloud H版`- PreserveHostHeader`（保留上游请求的host）过滤器不生效，G版可以；
+
+在spring cloud H版在配置文件配置CORS跨域不生效，G版可以；直接在容器中注入都生效；
