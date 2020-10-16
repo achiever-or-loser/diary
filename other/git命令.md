@@ -43,13 +43,17 @@ Port 45685
 IdentityFile ~/.ssh/id_rsa
 ~~~
 
-
-
-
-
 配置host文件
 
 
+
+
+
+
+
+而 git stash apply，会将当前分支的最后一次缓存的内容释放出来，但是刚才的记录还存在list中
+
+而 git stash pop，也会将当前分支的最后一次缓存的内容释放出来，但是刚才的记录不存在list中
 
 
 

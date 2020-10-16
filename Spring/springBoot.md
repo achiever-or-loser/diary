@@ -1,5 +1,7 @@
 # 启动
 
+[springBoot 启动结构图](https://www.processon.com/view/link/59812124e4b0de2518b32b6e)
+
 spring.factories 获取工厂信息；初始化；AppClassLoader；ConfigurableApplicationContext
 
 ## 初始化模块
@@ -70,6 +72,8 @@ classpath:/
 
 # 依赖问题
 
+# validation包
+
 查询spring-boot-starter-web-2.3.0.RELEASE.pom没有validation对应的包，所以要想使用校验功能要手动引入包：
 
 ```xml
@@ -78,6 +82,58 @@ classpath:/
 	<artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
 ```
+
+## boot与cloud版本问题
+
+首先是官网给出spring cloud与spring boot版本对应关系
+
+| Release Train                                                | Boot Version                     |
+| :----------------------------------------------------------- | :------------------------------- |
+| [Hoxton](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Hoxton-Release-Notes) | 2.2.x, 2.3.x (Starting with SR5) |
+| [Greenwich](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Greenwich-Release-Notes) | 2.1.x                            |
+| [Finchley](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Finchley-Release-Notes) | 2.0.x                            |
+| [Edgware](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes) | 1.5.x                            |
+| [Dalston](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Dalston-Release-Notes) | 1.5.x                            |
+
+spring cloud内部版本介绍
+
+| BUILD-XXX     | 开发版     | 开发团队内部使用，不是很稳                                   |
+| :------------ | :--------- | ------------------------------------------------------------ |
+| GA            | 稳定版     | 相比于开发版，基本上可以使用                                 |
+| PRE（M1、M2） | 里程碑版   | 主要是修复了一些BUG的版本，一个GA后通常有多个里程碑          |
+| RC            | 候选发布版 | 该阶段的软件类似于最终版的一个发行观察期，基本只修复比较严重的BU |
+| SR            | 正式发布版 |                                                              |
+
+
+
+
+
+# SSL
+
+~~~
+# SSL
+server.ssl.enabled=true
+server.ssl.key-alias=tomcat
+server.ssl.key-store=classpath:my.keystore
+server.ssl.key-password=123qwe
+server.ssl.key-store-type=JKS
+spring.application.name=demo
+~~~
+
+# http响应压缩
+
+~~~
+# http响应压缩
+server.compression.enabled=true
+server.compression.min-response-size=1
+server.compression.mime-types=text/html
+~~~
+
+# JSON序列化问题
+
+@JsonIgnore
+
+@JsonProperty是@JsonGetter与@JsonSetter的合体版
 
 
 

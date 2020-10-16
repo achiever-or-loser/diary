@@ -1,3 +1,5 @@
+# Maven
+
 下载自己的Maven后主要配置LocalRepository、mirrors，私有仓库的话要配置server；也可以自己配置一下profile中jdk等相关信息。[Maven setting 文件详解](https://www.cnblogs.com/hongmoshui/p/10762272.html)
 
 附一个阿里镜像
@@ -15,6 +17,10 @@
 
 package时自动执行clean+compile
 
+打包时带参数
+
+mvn package -DJAVA_LOCALIP=127.0.0.1 -DJAVA_CONSULACLTOKEN=6c42cbef-cfcd-3d31-eee3-4db94563691d
+
 ~~~
 mvn clean
 mvn compile
@@ -31,7 +37,7 @@ mvn source:jar
 
 
 
-scope
+# scope
 
 ~~~
 provide 在build和test阶段需要，在runtime阶段不需要，由容器提供。eg:web war包不包括servlet-api.jar，而是由tomcat提供

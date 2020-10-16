@@ -26,7 +26,7 @@
 
 1. 将后端cors跨域配置删除即可，只保留API gateway 项目的cors配置。
 
-https://segmentfault.com/a/1190000009220751
+
 
 
 

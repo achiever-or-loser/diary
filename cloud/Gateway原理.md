@@ -123,10 +123,6 @@ Filter分为Globle Filter和RouteFilter
 
 
 
-
-
-
-
 pom 版本
 
 springboot版本与springcloud对应支持版本
@@ -141,3 +137,14 @@ springboot版本与springcloud对应支持版本
 <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
 ```
 
+
+
+[跨域 响应头重复](https://segmentfault.com/a/1190000009220751)
+
+
+
+
+
+修改响应头
+
+https://blog.csdn.net/cqyhuaming/article/details/105280720
