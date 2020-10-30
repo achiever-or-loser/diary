@@ -32,4 +32,10 @@ find / -iname jenkins | xargs -n 1000 rm -rf
 
 
 
+GIT_COMMIT The commit hash being checked out.
+
+${GIT_COMMIT}
+
+
+
 [常见 error](

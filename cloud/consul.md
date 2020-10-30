@@ -1,18 +1,18 @@
 # consul
 
-服务删除
+服务删除(具体的实例)
 
 [paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) （服务名称id）
 
-curl [http://server_ip:8500/v1/agent/service/deregister/paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) -X PUT
+curl [http://server_ip:8500/v1/agent/service/deregister/paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) --header "X-Consul-Token: aad1c625-f959-008b-5621-d68600d4e6a7" -X PUT
+
+
 
 节点删除
 
 [4b36b27317a0](https://blog.csdn.net/v1/agent/force-leave/4b36b27317a0)（节点ID）
 
-[http://server_ip:8500/v1/agent/force-leave/4b36b27317a0](https://blog.csdn.net/v1/agent/force-leave/4b36b27317a0)
-
-
+http://server_ip:8500/v1/agent/force-leave/4b36b27317a0
 
 
 

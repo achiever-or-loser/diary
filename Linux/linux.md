@@ -1,6 +1,6 @@
 # Linux 
 
-## COW 写时复制
+# COW 写时复制
 
 在Linux程序中，fork（）会产生一个和父进程完全相同的子进程，但子进程在此后多会exec系统调用。
 
@@ -14,7 +14,7 @@ vfork子进程共享父进程的虚拟空间、物理空间
 
 C++中string的处理类似COW
 
-## select 、 poll 、 epoll
+# select 、 poll 、 epoll
 
 io多路中多路单线程通过记录跟踪每个sock（io流）的状态同时管理多个io流。提高服务器的吞吐量
 
@@ -26,7 +26,7 @@ io多路中多路单线程通过记录跟踪每个sock（io流）的状态同时
 | 最大连接数 |              1024（x86）或2048（x64）              |                      无上限                      |                            无上限                            |
 | fd拷贝     | 每次调用select，都需要把fd集合从用户态拷贝到内核态 | 每次调用poll，都需要把fd集合从用户态拷贝到内核态 |  调用epoll_ctl时拷贝进内核并保存，之后每次epoll_wait不拷贝   |
 
-## kill -9 杀不掉的进程
+# kill -9 杀不掉的进程
 
 kill -9 发送SIGKILL信号给进程，将其终止，但对于以下两种情况不适用
 
@@ -47,3 +47,28 @@ kill -9 发送SIGKILL信号给进程，将其终止，但对于以下两种情�
 短时间内大量的对象被创建或者被回收
 
 垃圾回收频繁，造成系统卡顿
+
+
+
+# 服务器丢包
+
+[Linux 服务器丢包](https://www.sohu.com/a/311178734_708993)
+
+本地线路、中途节点、机房网络
+
+防火墙 —— iptables filter
+
+连接跟踪表溢出 —— /proc/net/nf_conntrack
+
+Ring Buffer溢出——/proc/net/dev
+
+netdev_max_backlog 溢出 —— /proc/net/softnet_stat
+
+
+
+# TPS、QPS、吞吐量
+
+https://blog.csdn.net/u010889616/article/details/83245695
+
+
+
