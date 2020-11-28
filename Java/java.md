@@ -22,7 +22,7 @@ System.getProperty("processType")
 
 
 
-java -jar -DJAVA_LOCALIP=127.0.0.1 -DJAVA_CONSULACLTOKEN=6c42cbef-cfcd-3d31-eee3-4db94563691d
+java -jar -DJAVA_LOCALIP=127.0.0.1 -DJAVA_CONSULACLTOKEN=aad1c625-f959-008b-5621-d68600d4e6a7
 
 
 

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="81083337-0b22-4c9c-90f9-57d70f45a138" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/20-10.md" beforeDir="false" afterPath="$PROJECT_DIR$/20-10.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/1-4简介.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/11. Route Metadata Configuration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/12. Http timeouts configuration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/13. Reactor Netty Access Logs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/15. Actuator API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/17. Developer Guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/5.路由断言Factories.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/6.GatewayFilter Factories(上).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/6.GatewayFilter Factories(下).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/7.全局Filter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/9. TLS and SSL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/Append application properties.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/Note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/mykeys.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux/Centos install and init.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/Centos install and init.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux/cmd.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/cmd.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux/linux.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/linux.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux/服务器丢包.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/consul.md" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/consul.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/Jenkins.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/Redis配置文件详解.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/TPS、QPS、吞吐量.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/docker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/git命令.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/mongodb.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/rabbitmq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/registry.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\file\maven\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\file\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectId" id="1jYB9WPdNLWqniPVXLiGbLEesrt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603971322992">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603971322992" />
+  </component>
+</project>

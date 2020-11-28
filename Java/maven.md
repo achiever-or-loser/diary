@@ -21,6 +21,10 @@ package时自动执行clean+compile
 
 mvn package -DJAVA_LOCALIP=127.0.0.1 -DJAVA_CONSULACLTOKEN=6c42cbef-cfcd-3d31-eee3-4db94563691d
 
+跳过单元测试
+
+mvn package -DskipTests
+
 ~~~
 mvn clean
 mvn compile

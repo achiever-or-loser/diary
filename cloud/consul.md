@@ -2,11 +2,17 @@
 
 服务删除(具体的实例)
 
-[paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) （服务名称id）
+[paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) （服务实例id）
 
 curl [http://server_ip:8500/v1/agent/service/deregister/paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) --header "X-Consul-Token: aad1c625-f959-008b-5621-d68600d4e6a7" -X PUT
 
+curl [http://localhost:8500/v1/agent/service/deregister/paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) --header "X-Consul-Token: aad1c625-f959-008b-5621-d68600d4e6a7" -X PUT
 
+curl http://localhost:8500/v1/agent/service/deregister/6a5c71c7-d8e8-4cf2-8c77-df6ccfd84125 --header "X-Consul-Token: 4a889de0-89b8-2b94-dc1f-537d8c4e23ea" -X PUT
+
+
+
+4a889de0-89b8-2b94-dc1f-537d8c4e23ea
 
 节点删除
 
@@ -93,5 +99,47 @@ key_prefix "config/" {
         "10.211.55.26"
     ],
 ~~~
+
+
+
+![server and client](http://static.bluersw.com/images/spring-cloud-consul-client-25.png)
+
+只使用Consul的Server模式有以下2个问题：
+
+- 因为Consul Server数量受到控制所以压力承载（扩展性）是个问题。
+- Server很少导致一个Server下会注册很多微服务，当Server挂掉，这个Server节点下注册的微服务都会视为无效。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

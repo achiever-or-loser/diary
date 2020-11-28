@@ -1,3 +1,17 @@
+# &&、()、||
+
+command1 && command2
+
+&&左边的command1执行成功(返回0表示成功)后，&&右边的command2才能被执行。
+
+command1 || command2
+
+如果||左边的command1执行失败(返回1表示失败)，就执行&&右边的command2。
+
+(command1；command2；command3;...)
+
+执行多个命令，则需要用命令分隔符分号隔开每个命令
+
 # curl
 
 https://www.cnblogs.com/hujiapeng/p/8470099.html

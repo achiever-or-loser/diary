@@ -256,6 +256,79 @@ sudo curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.4/doc
 
 `sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose`
 
+常用命令
+
+~~~
+build              构建或重新构建容器服务
+bundle             从compose文件生成一个Docker包
+config             验证并查看compose文件
+create             创建容器服务
+down               停止并删除容器、网络、映像和卷
+events             从容器接收实时事件
+exec               在正在运行的容器中执行命令
+help               帮助命令
+images             镜像列表
+kill               杀死容器
+logs               查看容器的日志
+pause              暂停容器服务
+port               输出端口号
+ps                 容器列表
+pull               下载容器服务镜像
+push               上传容器服务镜像
+restart            容器服务重新开始
+rm                 删除停止的容器
+run                运行一次性命令
+scale              设置服务的容器数量
+start              开始容器服务
+stop               停止容器服务
+top                显示正在运行的进程
+unpause            暂停容器服务
+up                 创建并启动容器
+version            显示Docker-Compose版本信息
+~~~
+
+
+
+核心配置
+
+~~~
+version #指定compose版本 最好是3.0以上版本 目前最新是3.8版本
+services #配置容器[容器列表]
+    nginx： #配置容器标识(唯一编号)
+       image: #配置容器镜像
+       ports: #配置容器映射端口号[数组]
+       networks: #配置容器网络[数组]
+networks #网络指定配置
+    nginx-rmcore: #配置网络名称
+        external: true #网络自定义
+volumes #数据挂载配置
+extensions #扩展配置
+~~~
+
+示例
+
+~~~
+version: '3'
+services:
+  web:
+      build: .
+      ports:
+       - "8000:80"
+      depends_on:
+       - mysql
+  mysql:
+    container_name: mysql_dc
+    environment:
+      - MYSQL_ROOT_PASSWORD=mima2100
+    image: mysql
+    ports:
+      - "3306:3306"
+~~~
+
+
+
+
+
 ## registry
 
 [registry 官方](https://docs.docker.com/registry/deploying/)
