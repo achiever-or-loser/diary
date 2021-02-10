@@ -4,7 +4,7 @@
 
 [paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) （服务实例id）
 
-curl [http://server_ip:8500/v1/agent/service/deregister/paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) --header "X-Consul-Token: aad1c625-f959-008b-5621-d68600d4e6a7" -X PUT
+curl  --header "X-Consul-Token: aad1c625-f959-008b-5621-d68600d4e6a7" -X PUT http://server_ip:8500/v1/agent/service/deregister/paas-portal-sit-9003
 
 curl [http://localhost:8500/v1/agent/service/deregister/paas-portal-sit-9003](https://blog.csdn.net/v1/agent/service/deregister/paas-portal-sit-9003) --header "X-Consul-Token: aad1c625-f959-008b-5621-d68600d4e6a7" -X PUT
 
